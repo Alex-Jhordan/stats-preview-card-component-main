@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0A0C1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arimo', sans-serif;
+    color: #FFF;
+}
+
+.main {
+    width: 80%;
+    background: #1C1938;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.informacion {
+    padding: 15% 20% 12% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-texto-secundario {
+    flex: 2;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 36px;
+}
+
+.texto-principal {
+    font-size: 32px;
+}
+
+.texto-secundario {
+    font-size: 14px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+.estadisticas h2 {
+    font-size: 22px;
+}
+
+.estadisticas p {
+    font-size: 11.5px;
+    text-transform: uppercase;
+}
+
+.texto-secundario, .estadisticas p {
+    color: #c2c2c2;
+}
+
+.palabra-destacada {
+    color: #A260CC;
+}
+
+.contenedor-imagen {
+    background: #b367df;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+@media(max-width: 1235px) {
+    .texto-principal {
+        font-size: 26px;
+    }
+
+    .texto-secundario {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1067px) {
+    .main {
+        width: 500px;
+        margin: 50px 0;
+        grid-template-columns: 100%;
+    }
+
+    .informacion {
+        padding: 30px;
+    }
+
+    .texto-principal {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .texto-secundario {
+        font-size: 12.8px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .estadisticas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+        gap: 20px;
+    }
+
+    .estadisticas h2, .estadisticas p {
+        text-align: center;
+    }
+
+    .contenedor-imagen {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    } 
+}
+
+@media(max-width: 580px) {
+    .main {
+        width: 90%;
+    }
+}
