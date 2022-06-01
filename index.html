@@ -8,53 +8,55 @@
     
     <title>Frontend Mentor | Stats preview card component</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/styles.css">
     
   </head>
   <body>
 
-    <section class="main">
+    <main class="main">
 
-      <section class="informacion">
+      <div class="card">
 
-        <section>
-          <h2 class="texto-principal">Get <span class="palabra-destacada">insights</span> that help your business grow.</h2>
-        </section>
+        <div class="card__image-container">
+          <img class="card__image" src="images/image-header-mobile.jpg" alt="programmers working">
+        </div>
 
-        <section class="contenedor-texto-secundario">
-          <p class="texto-secundario">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-        </section>
+        <div class="card__information">
 
-        <section class="estadisticas">
+          <div class="card__texts">
+            <h1 class="card__title">Get <span class="card__accented-word">insights</span> that help your business grow.</h1>
+            <p class="card__paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+          </div>
 
-          <section>
-            <h2>10k+</h2>
-            <p>companies</p>
-          </section>
+          <div class="card__stats">
 
-          <section>
-            <h2>314</h2>
-            <p>templates</p>
-          </section>
+            <div class="card__stat">
+              <span class="card__stat-number">10k+</span>
+              <span class="card__stat-type">companies</span>
+            </div>
 
-          <section>
-            <h2>12M+</h2>
-            <p>queries</p>
-          </section>
+            <div class="card__stat">
+              <span class="card__stat-number">314</span>
+              <span class="card__stat-type">templates</span>
+            </div>
 
-        </section>
+            <div class="card__stat">
+              <span class="card__stat-number">12M+</span>
+              <span class="card__stat-type">queries</span>
+            </div>
 
-      </section>
+          </div>
 
-      <section class="contenedor-imagen">
-        <img src="images/image-header-desktop.jpg" alt="image-header-desktop.jpg">
-      </section>
+        </div>
 
-    </section>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a class="attribution__link" href="https://github.com/Alex-Jhordan">Alex Huanachin</a>.
+      </div>
+
+    </main>
 
   </body>
 </html>

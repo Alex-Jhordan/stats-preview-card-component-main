@@ -1,0 +1,51 @@
+@media (min-width: 1024px) {
+    
+    .card {
+        flex-direction: row-reverse;
+        width: 80%;
+        max-width: 1016px;
+        margin: 0;
+
+        &__image-container {
+            width: 50%;
+        }
+
+        &__image {
+            content: url(../images/image-header-desktop.jpg);
+        }
+
+        &__information {
+            width: 50%;
+            padding: 4rem;
+            justify-content: space-between;
+        }
+
+        &__texts {
+            text-align: start;
+            gap: 1.5rem;
+        }
+
+        &__title {
+            font-size: 2.05rem;
+        }
+
+        &__paragraph {
+            font-size: 0.8rem;
+            padding-right: 2.5rem;
+        }
+
+        &__stats {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+        }
+
+        &__stat {
+            min-width: auto;
+        }
+    }
+}
+
+.attribution {
+    position: fixed;
+    bottom: 20px;
+}
